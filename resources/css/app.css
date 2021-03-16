@@ -1,0 +1,82 @@
+.body {
+    font-family: 'Nunito', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-main {
+    width: 70%;
+    height: 230px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: lightyellow;
+    border: 1px solid gray;
+    border-radius: 1em;
+}
+
+.input-date {
+    border-radius: 0.5em;
+}
+
+.input-submit {
+    border: 1px solid cadetblue;
+    border-radius: 0.5em;
+    background-color: lightblue;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.input-submit:hover {
+    background-color: cadetblue;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 80%;
+    padding: 1em;
+    border: 1px solid;
+    border-radius: 1em;
+}
+
+.message-info {
+    background-color: lightblue;
+    border-color: cadetblue;
+    color: midnightblue;
+}
+
+.message-error {
+    background-color: lightcoral;
+    border-color: indianred;
+    color: darkred;
+}
+
+.message-success {
+    background-color: lightgreen;
+    border-color: forestgreen;
+    color: darkgreen;
+}
+
+.message-text {
+    color: inherit;
+    font-size: 1rem;
+}
+
+.message-close {
+    font-size: 1.5rem;
+    line-height: 80%;
+    cursor: pointer;
+}

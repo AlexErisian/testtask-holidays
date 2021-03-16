@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HolidayController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'holidays.check')->name('start');
+
+Route::post('/', [HolidayController::class, 'check'])->name('holidays.check');
